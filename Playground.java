@@ -10,7 +10,7 @@ public class Playground {
 
         // METHOD PLAYGROUND
         // METHOD WITH VOID
-        addExclamationPoint(name);
+        // addExclamationPoint(name);
         
         // METHOD WITHOUT VOID (STRING)
         newAddExclamationPoint(name);
@@ -22,20 +22,35 @@ public class Playground {
 
         // System.out.println(newAddExclamationPoint(name));
         // Create a friend object
-        Friend newFriend = new Friend();
+        // Friend newFriend = new Friend();
         //Call my friend name method
-        String friendName = newFriend.myFriendName();
+        String friendName = Friend.myFriendName();
         System.out.println(friendName);
 
         // call validateFriend Mthod with the variable name
         // name = Cailyn
-        String validateFriend = newFriend.validateFriend(name);
+        String validateFriend = Friend.validateFriend(name);
         System.out.println(validateFriend);
-
-        System.out.println(newFriend.validateFriend("jake"));
+        System.out.println(Friend.validateFriend("jake"));
         
-
-
+        Counter count = new Counter();
+        //System.out.println(count.getValue());
+        //0
+        System.out.println(count.getValue());
+        //1
+        count.click();
+        System.out.println(count.getValue());
+        //2
+        count.click();
+        System.out.println(count.getValue());
+        count.click();
+        count.click();
+        count.click();
+        System.out.println(count.getValue());
+        count.minusClick();
+        System.out.println(count.getValue());
+        count.reset();
+        System.out.println(count.getValue());
 
  
 
